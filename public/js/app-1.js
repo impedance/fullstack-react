@@ -2,9 +2,21 @@ class ProductList extends React.Component {
   render() {
     return (
       <div className='ui unstackable items'>
-        Hello, friend! I am a basic React component.
+        <Product />
       </div>
     );
+  }
+}
+
+class Product extends React.Component {
+  render() {
+    return (
+      <div className='item'>
+        <div className='image'>
+          <img src='images/products/image-aqua.png' />
+        </div>
+      </div>
+    )
   }
 }
 
